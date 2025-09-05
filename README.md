@@ -7,3 +7,6 @@
 - Full removal of packages installed via pacman
 - Tracks all changes for a clean uninstall
 - Simple, familiar and Arch-focused
+
+## How does it work
+When you call pacman command to install a package, trought hooks system a Transaction ID is attached to all files that comes with the package so the programs gets the location of all files that entered your machine with the package, that way it knows exactly where are the files, size of the files and data types ensuring that when you delete them, everything on your system works as if you never installed a package.
