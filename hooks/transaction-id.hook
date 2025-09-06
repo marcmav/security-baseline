@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Install
+Type = Package
+Target = *
+
+[Action]
+Description = Assigning transaction ID
+When = PreTransaction
+Exec = /usr/local/bin/gen-pacman-tid
