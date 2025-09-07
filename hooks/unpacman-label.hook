@@ -5,6 +5,6 @@ Type = Package
 Target = *
 
 [Action]
-Description = Assigning transaction ID
-When = PreTransaction
+Description = Labelling files with source=<package>
+When = PostTransaction
 Exec = /usr/local/bin/gen-pacman-tid
