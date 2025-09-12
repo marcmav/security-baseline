@@ -16,5 +16,6 @@ When you call pacman command to install or update a package, trough hooks system
 Pacman is a powerful package manager, but sometimes uninstalling a package leaves traces behind.  
 **unpacman** was created to explore whether it’s possible to go one step further: to provide a complete rollback mechanism, similar to pressing *Ctrl+Z* for system changes.  
 
+---
 
 ⚠️ Project status: paused — not under active development right now.
