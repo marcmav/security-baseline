@@ -44,7 +44,7 @@ def label_package(pkg):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: unpacman-label.py <package1> [package2 ...]")
+        print("Usage: unpacman-label <package1> [package2 ...]")
         sys.exit(1)
 
     for package in sys.argv[1:]:
