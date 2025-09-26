@@ -45,3 +45,6 @@ sudo mkdir -p /etc/pacman.d/hooks
 cd /etc/pacman.d/hooks
 ...
 ```
+---
+
+⚠️ **Project status:** paused — not under active development.
