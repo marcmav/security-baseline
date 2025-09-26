@@ -1,4 +1,4 @@
 # ignore:
-tests.py
-unpacman.txt
 __pycache__
+src/tests.py
+unpacman-idea
