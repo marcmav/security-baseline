@@ -23,6 +23,7 @@ If you're like me, you chose Arch Linux exactly because you want full control ov
 
 ## How It works?
 Whenever you run a pacman command to install or update a package, the hooks system attaches metadata to every file, making them traceable even if the main package is later removed.
+
 ...
 
 ---
