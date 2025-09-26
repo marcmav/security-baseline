@@ -8,7 +8,7 @@ import subprocess
 try:
     import xattr
 except ImportError:
-    print("Please install xattr: sudo pacman -S python-pyxattr")
+    print("Please install xattr: pip install -r requirements")
     sys.exit(1)
 
 def get_package_files(pkg):
