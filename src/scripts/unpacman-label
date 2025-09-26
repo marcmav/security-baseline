@@ -8,7 +8,7 @@ import subprocess
 try:
     import xattr
 except ImportError:
-    print("Please install xattr: pip install -r requirements")
+    print('Please install xattr: pip install -r requirements.txt')
     sys.exit(1)
 
 def get_package_files(pkg):
