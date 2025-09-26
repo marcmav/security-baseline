@@ -19,6 +19,7 @@ If you're like me, you chose Arch Linux because you want the full control on you
 
 ## How does it work
 When you run a pacman command to install or update a package, through the hooks system metadata will be attached to each file that comes from that same package...
+
 ---
 
 ⚠️ **Project status:** paused — not under active development right now.
