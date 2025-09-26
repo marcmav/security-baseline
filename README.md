@@ -19,8 +19,10 @@ If you're like me, you chose Arch Linux exactly because you want the full contro
 
 **unpacman** was created to explore whether it’s possible to go one step further: to provide a complete rollback mechanism, similar to pressing *Ctrl+Z* but for system changes.  
 
+---
+
 ## How does it work
-When you run a pacman command to install or update a package, through the hooks system metadata will be attached to each file that comes from that same package...
+When you run a pacman command to install or update a package, through the hooks system metadata will be attached to each and every file that comes from that same package...
 
 ---
 
