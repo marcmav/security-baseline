@@ -5,3 +5,5 @@ add commands like:
 if a file has more than one source tag, just delete the tag
 
 use words like persistent data (for files, metadate, cache, etc) and upstream operations (for pacman operations)
+
+make a readme
