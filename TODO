@@ -1,0 +1,5 @@
+name it vestigia
+add commands like:
+>vestigia trace -f firefox  -- to find all files that were installed while installing firefox
+>vestigia purge firefox  -- to delete firefox and delete all files, logs, etc that came with it
+if a file has more than one source tag, just delete the tag
