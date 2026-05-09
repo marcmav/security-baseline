@@ -1,4 +1,3 @@
 # ignore:
 src/.venv
-unpacman-idea.txt
 src/tests.py
