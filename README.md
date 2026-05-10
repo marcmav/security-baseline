@@ -8,12 +8,9 @@ It is designed to completely remove packages installed via pacman — including 
 - Tracking of changes for clean and reliable uninstalls
 - Simple, familiar and Arch-focused design
 
----
-
 ### Why This Project?
 Pacman is a powerful package manager, but sometimes uninstalling a package leaves behind residual files. These unused files waste disk space and are hard to trace, making full cleanup difficult.
- 
+
 If you're like me, you chose Arch Linux exactly because you want full control over your machine.
 
 **unpacman** was created to explore whether it’s possible to go one step further: to provide a complete rollback mechanism, like pressing Ctrl+Z for your system.
-
