@@ -26,9 +26,7 @@ Recommendations:
 
 Linux
 ###### hm actually, linux is not an operating system, its a kernel.
-###### "anyways bro"
-
-<br/>
+###### "whatever bro"
 
 Arch Linux
 ###### i also use fedora and debian on my other machines, why am i referring only arch? you may ask. "IT'S THE BEST DISTRO EVER bro!!", why do i think that? you may ask. "its mostly just hype"
@@ -43,18 +41,12 @@ Cons:
 - Requires maintenance
 - User mistakes can reduce security
 
+<br/>
+<br/>
 
-Pros:
-- Strong security defaults
-- SELinux enabled by default
-- Frequent updates
+Not Recommended
 
-Cons:
-- Less minimal than Arch
-
-### Not Recommended
-
-#### End-of-Life Systems
+End-of-Life Systems
 
 Operating systems that no longer receive security updates should not be used.
 
@@ -62,9 +54,13 @@ Examples:
 - Windows 7
 - Ubuntu releases past support
 - Unmaintained Linux distributions
+###### "i think anything windows should be on this list too"
 
-### My Baseline
+<br/>
+<br/>
+
+Baseline
 
 Current Recommendation:
-- Fedora/Debian for most users
-- Arch Linux for advanced users
+- Arch Linux (for **chad** users)
+- Fedora/Debian
