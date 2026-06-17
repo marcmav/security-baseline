@@ -21,12 +21,20 @@ An operating system should:
 - Allow user control
 - Have a large security-conscious community
 
-### Recommendations
+<br/>
+<br/>
 
-#### Linux
+Recommendations:
+
+Linux
 (hm actually, linux is not an operating system, its a kernel.)
 
-##### Arch Linux
+(anyways)
+
+<br/>
+
+Arch Linux
+(i also use fedora and debian on my other machines, why am i referring only arch? you may ask. IT'S THE BEST DISTRO EVER bro)
 
 Pros:
 - Minimal by default
@@ -38,7 +46,6 @@ Cons:
 - Requires maintenance
 - User mistakes can reduce security
 
-##### Fedora
 
 Pros:
 - Strong security defaults
