@@ -1,10 +1,10 @@
-### Operating System
+#### Operating System
 
-## Purpose
+### Purpose
 
 The operating system is the foundation of the security stack. Every other security control depends on the OS enforcing permissions, isolation, updates, and resource access.
 
-## Requirements
+### Requirements
 
 An operating system should:
 
@@ -16,13 +16,13 @@ An operating system should:
 - Allow user control
 - Have a large security-conscious community
 
-## Recommendations
+### Recommendations
 
-### Linux
+#### Linux
 (nerd: hm, actually linux is not an operating system, its a kernel.)
 (me: i know bro)
 
-#### Arch Linux
+##### Arch Linux
 
 Pros:
 - Minimal by default
@@ -34,7 +34,7 @@ Cons:
 - Requires maintenance
 - User mistakes can reduce security
 
-#### Fedora
+##### Fedora
 
 Pros:
 - Strong security defaults
@@ -44,9 +44,9 @@ Pros:
 Cons:
 - Less minimal than Arch
 
-## Not Recommended
+### Not Recommended
 
-### End-of-Life Systems
+#### End-of-Life Systems
 
 Operating systems that no longer receive security updates should not be used.
 
@@ -55,9 +55,9 @@ Examples:
 - Ubuntu releases past support
 - Unmaintained Linux distributions
 
-## Hardening Principles
+### Hardening Principles
 
-### Full-Disk Encryption
+#### Full-Disk Encryption
 
 Enable encryption during installation whenever possible.
 
@@ -65,13 +65,13 @@ Benefits:
 - Protects data at rest
 - Mitigates device theft
 
-### Principle of Least Privilege
+#### Principle of Least Privilege
 
 - Use non-root accounts
 - Avoid unnecessary sudo usage
 - Limit installed software
 
-### Software Sources
+#### Software Sources
 
 Prefer:
 - Official repositories
@@ -81,13 +81,13 @@ Avoid:
 - Random installation scripts
 - Untrusted repositories
 
-### Updates
+#### Updates
 
 Install security updates promptly.
 
 Security patches are most effective when applied quickly.
 
-### Service Minimization
+#### Service Minimization
 
 Disable services that are not needed.
 
@@ -96,7 +96,7 @@ Examples:
 - Remote desktop services
 - Legacy protocols
 
-## My Baseline
+### My Baseline
 
 Current Recommendation:
 - Fedora for most users
