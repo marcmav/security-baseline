@@ -9,15 +9,15 @@ The operating system is the foundation of the security stack. Every other securi
 <br/>
 <br/>
 
-Requirements:
+> Requirements:
 
-- Receive frequent security updates
-- Support full-disk encryption
-- Provide strong process isolation
-- Have a transparent security model
-- Minimize telemetry
-- Allow user control
-- Have a large security-conscious community
+> - Receive frequent security updates
+> - Support full-disk encryption
+> - Provide strong process isolation
+> - Have a transparent security model
+> - Minimize telemetry
+> - Allow user control
+> - Have a large security-conscious community
 
 <br/>
 <br/>
@@ -46,6 +46,6 @@ Arch Linux
 
 Baseline
 
-Current Recommendation:
-- Arch Linux (for ==chad== users)
-- Fedora / Debian
+> Current Recommendation:
+> - Arch Linux (for == chad == users)
+> - Fedora / Debian
