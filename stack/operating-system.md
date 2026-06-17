@@ -1,6 +1,6 @@
 #### Operating System
 
-### Purpose
+Purpose:
 
 The operating system is the foundation of the security stack. Every other security control depends on the OS enforcing permissions, isolation, updates, and resource access.
 
@@ -19,8 +19,7 @@ An operating system should:
 ### Recommendations
 
 #### Linux
-(nerd: hm, actually linux is not an operating system, its a kernel.)
-(me: i know bro)
+(hm actually, linux is not an operating system, its a kernel.)
 
 ##### Arch Linux
 
@@ -55,57 +54,8 @@ Examples:
 - Ubuntu releases past support
 - Unmaintained Linux distributions
 
-### Hardening Principles
-
-#### Full-Disk Encryption
-
-Enable encryption during installation whenever possible.
-
-Benefits:
-- Protects data at rest
-- Mitigates device theft
-
-#### Principle of Least Privilege
-
-- Use non-root accounts
-- Avoid unnecessary sudo usage
-- Limit installed software
-
-#### Software Sources
-
-Prefer:
-- Official repositories
-- Verified maintainers
-
-Avoid:
-- Random installation scripts
-- Untrusted repositories
-
-#### Updates
-
-Install security updates promptly.
-
-Security patches are most effective when applied quickly.
-
-#### Service Minimization
-
-Disable services that are not needed.
-
-Examples:
-- Unused SSH servers
-- Remote desktop services
-- Legacy protocols
-
 ### My Baseline
 
 Current Recommendation:
-- Fedora for most users
+- Fedora/Debian for most users
 - Arch Linux for advanced users
-
-Required Controls:
-- Full-disk encryption
-- Automatic security updates
-- Firewall enabled
-- Strong account password
-- Password manager
-- Multi-factor authentication
