@@ -31,15 +31,15 @@ Linux
 Arch Linux
 ###### i also use fedora and debian on my other machines, why am i referring only arch? you may ask. "IT'S THE BEST DISTRO EVER bro!!", why do i think that? you may ask. "its mostly just hype"
 
-Pros:
-- Minimal by default
-- User-controlled
-- Fast security updates
-- Extensive documentation
+> Pros:
+> - Minimal by default
+> - User-controlled
+> - Fast security updates
+> - Extensive documentation
 
-Cons:
-- Requires maintenance
-- User mistakes can reduce security
+> Cons:
+> - Requires maintenance
+> - User mistakes can reduce security
 
 <br/>
 <br/>
@@ -47,5 +47,5 @@ Cons:
 Baseline
 
 Current Recommendation:
-- Arch Linux (for **chad** users)
+- Arch Linux (for ==chad== users)
 - Fedora / Debian
