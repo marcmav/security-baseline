@@ -6,7 +6,7 @@ A playbook of the architectural root of my security model. It defines the founda
 
 Security is executed sequentially from the absolute core hardware outward to my online alias. If a lower layer is compromised, the integrity of all layers above it is void.
 
-```quota
+```quote
 [ Layer 5: Identity ] --- Persona
     [ Layer 4: Credentials ] --- Password Manager, TOTP
         [ Layer 3: Gateway ] --- Browser, Search Engine
