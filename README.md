@@ -14,4 +14,4 @@ Security is executed sequentially from the absolute core hardware outward to the
                 [ Layer 3: Data at Rest ] ---  Storage
                     [ Layer 2: Compute ] --- Operating System
                         [ Layer 1: Core ] --- Firmware/UEFI
-
+```
