@@ -4,14 +4,13 @@ A playbook of the architectural root of my security model. It defines the founda
 
 ## *The Defense-in-Depth Model*
 
-Security is executed sequentially from the absolute core hardware outward to the network edge. If a lower layer is compromised, the integrity of all layers above it is void.
+Security is executed sequentially from the absolute core hardware outward to my online alias. If a lower layer is compromised, the integrity of all layers above it is void.
 
-```text
-[ Layer 7: Aliasing ] --- Identity
-    [ Layer 6: Data ] --- Master Vault, TOTP
-        [ Layer 5: Gateway ] --- Browser, Search Engine
-            [ Layer 4: Network ] --- Router, Firewall, DNS
-                [ Layer 3: Data at Rest ] ---  Storage
-                    [ Layer 2: Compute ] --- Operating System
-                        [ Layer 1: Core ] --- Firmware/UEFI
+```quota
+[ Layer 5: Identity ] --- Persona
+    [ Layer 4: Credentials ] --- Password Manager, TOTP
+        [ Layer 3: Gateway ] --- Browser, Search Engine
+            [ Layer 2: Network ] --- Router, Firewall, DNS
+                [ Layer 1: Compute ] --- Operating System
+                    [ Layer 0: Core ] --- Firmware/UEFI
 ```
