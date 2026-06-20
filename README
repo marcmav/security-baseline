@@ -11,7 +11,7 @@ Security is engineered sequentially from the system's lowest trust boundary outw
 [ Layer 5: Alias ] --- Identity
     [ Layer 4: Credentials ] --- Password Manager, TOTP
         [ Layer 3: Gateway ] --- Browser, Search Engine
-            [ Layer 2: Network ] --- Router, Firewall, DNS
+            [ Layer 2: Network ] --- Firewall, DNS
                 [ Layer 1: Compute ] --- Operating System
                     [ Layer 0: Core ] --- Firmware/UEFI
 
