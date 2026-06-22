@@ -22,7 +22,7 @@ Security is engineered sequentially from the system's lowest trust boundary outw
 Layer 0: Core
 =============
 
-The Core layer represents the lowest trust boundary of a system. It's the first code executed when the machine powers on, it consists of the firmware, the software responsible for initializing hardware and the bootloader which is responsible to execute the operating system. If this layer is compromised, no software control above it can be trusted.
+The Core layer represents the lowest trust boundary of a system. It consists of the firmware, which initializes hardware and establishes the initial trust state of the machine, and the bootloader, which is responsible for loading and transferring execution to the operating system. If this layer is compromised, no software control above it can be trusted.
 
 Components
 ----------
