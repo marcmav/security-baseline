@@ -24,22 +24,26 @@ Layer 0: Core
 
 The Core layer represents the lowest trust boundary of a system. It consists of the firmware, which initializes hardware and establishes the initial trust state of the machine, and the bootloader, which is responsible for loading and transferring execution to the operating system. If this layer is compromised, no software control above it can be trusted.
 
+----------
 Components
 ----------
 
 > - Firmware
 > - Bootloader
 
+---------
 Objective
 ---------
 
 Establish a trustworthy startup chain and ensure that only authorized code executes before the operating system gains control.
 
+---------
 Principle
 ---------
 
 Physical access to an unlocked Core is absolute compromise. Every layer above this one assumes Core has not been tampered with.
 
+--------
 Controls
 --------
 
