@@ -44,6 +44,9 @@ Firmware is software. It has CVEs, it must be updated like any other component i
 > - Firmware Password
 Locks firmware settings behind a password. (Without it, anyone with physical access can disable Secure Boot, change the boot order and boot from external media).
 
+> - Bootloader Updates
+Bootloader is software. It has CVEs, it must be updated like any other component in the stack.
+
 > - Secure Boot
 Enabling it ensures only cryptographically signed bootloaders are allowed to execute. (Prevents bootkits and rootkits from loading before the OS has a chance to defend itself).
 
@@ -56,8 +59,6 @@ All unneeded or legacy hardware interfaces embedded on the mainboard must be dis
 > - TPM (Trusted Platform Module)
 If the hardware supports it, the TPM stores encryption keys and binds them to the hardware state. (Used in conjunction with full-disk encryption to ensure the system only decrypts in a known-good state).
 
-> - Bootloader Updates
-Bootloader is software. It has CVEs, it must be updated like any other component in the stack.
 
 ================
 Layer 1: Compute
