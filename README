@@ -54,8 +54,10 @@ Set to internal drive only. (Disabling USB and network boot eliminates the abili
 All unneeded or legacy hardware interfaces embedded on the mainboard must be disabled at the firmware layer to reduce the local attack surface. (Disable Network Stack, integrated fingerprint scanners, internal microphones and webcams).
 
 > - TPM (Trusted Platform Module)
-If the hardware supports it, the TPM stores encryption keys and binds them to the hardware state. Used in conjunction with full-disk encryption to ensure the system only decrypts in a known-good state.
+If the hardware supports it, the TPM stores encryption keys and binds them to the hardware state. (Used in conjunction with full-disk encryption to ensure the system only decrypts in a known-good state).
 
+> - Bootloader Updates
+Bootloader is software. It has CVEs, it must be updated like any other component in the stack.
 
 ================
 Layer 1: Compute
