@@ -48,25 +48,25 @@ Controls
 --------
 
 > - Firmware Updates
-Firmware is software. It has CVEs, it must be updated like any other component in the stack.
+    Firmware is software. It has CVEs, it must be updated like any other component in the stack.
 
 > - Firmware Password
-Locks firmware settings behind a password. (Without it, anyone with physical access can disable Secure Boot, change the boot order and boot from external media).
+    Locks firmware settings behind a password. (Without it, anyone with physical access can disable Secure Boot, change the boot order and boot from external media).
 
 > - Bootloader Updates
-Bootloader is software. It has CVEs, it must be updated like any other component in the stack.
+    Bootloader is software. It has CVEs, it must be updated like any other component in the stack.
 
 > - Secure Boot
-Enabling it ensures only cryptographically signed bootloaders are allowed to execute. (Prevents bootkits and rootkits from loading before the OS has a chance to defend itself).
+    Enabling it ensures only cryptographically signed bootloaders are allowed to execute. (Prevents bootkits and rootkits from loading before the OS has a chance to defend itself).
 
 > - Boot Order
-Set to internal drive only. (Disabling USB and network boot eliminates the ability to boot a live OS or run cold boot attacks against the machine)
+    Set to internal drive only. (Disabling USB and network boot eliminates the ability to boot a live OS or run cold boot attacks against the machine)
 
 > - Component Minimization
-Disable firmware-level features and interfaces that are not required for the system's intended purpose. Every enabled component increases the attack surface and should be justified. (Disable Network Stack, internal microphones and webcams).
+    Disable firmware-level features and interfaces that are not required for the system's intended purpose. Every enabled component increases the attack surface and should be justified. (Disable Network Stack, internal microphones and webcams).
 
 > - TPM (Trusted Platform Module)
-If the hardware supports it, the TPM stores encryption keys and binds them to the hardware state. (Used in conjunction with full-disk encryption to bind decryption keys to a measured boot state, helping detect unauthorized modifications during startup).
+    If the hardware supports it, the TPM stores encryption keys and binds them to the hardware state. (Used in conjunction with full-disk encryption to bind decryption keys to a measured boot state, helping detect unauthorized modifications during startup).
 
 
 ================
