@@ -79,4 +79,51 @@ Controls
 Layer 1: Compute
 ================
 
+The Compute layer represents the core execution environment of the system. It encompasses the operating system kernel, the initial ramdisk, the storage volumes, and user space process management. Once the Core layer transfers execution, Layer 1 is responsible for enforcing runtime resource isolation, cryptographic privacy of data at rest, and local permission boundaries. If this layer is compromised, an adversary can manipulate memory, steal user files, or subvert the gateway applications running above it.
+
+----------
+Components
+----------
+> - Storage (Data at Rest)
+> - Operating System (Kernel & User Space)
+
+---------
+Principle
+---------
+No process or user space application may override kernel-level boundary controls. The operating system must enforce absolute isolation between processes and maintain a minimal local attack surface by executing only strictly necessary services.
+
+---------
+Objective
+---------
+Protect data at rest through cryptographic enforcement, harden the execution runtime against local exploit vectors, and restrict process privileges to the absolute minimum required to function.
+
+--------
+Controls
+--------
+> - Full-Disk Encryption (FDE)
+    All system partitions (root, home, and swap) MUST be encrypted using modern cryptographic standards (e.g., LUKS2 with aes-xts-plain64). (Ensures that if the device is lost, stolen, or powered down, data cannot be extracted via physical block analysis).
+
+> - High-Entropy Key Derivation (Argon2id)
+    The PBKDF for the disk encryption password must utilize Argon2id to maximize memory-hard resistance against GPU-accelerated brute-force attacks.
+
+> - Minimal Attack Surface (Base Installation)
+    The operating system must be built from a minimal base (e.g., a vanilla terminal installation) avoiding pre-baked monolithic desktop environments. Unneeded system daemons, services, and background listeners must be absent or aggressively disabled.
+
+> - Display Protocol Isolation (Wayland Native)
+    The graphical workspace must run natively on Wayland (e.g., via a modern compositor like Hyprland). Legacy X11 protocols are forbidden. (Enforces strict window isolation so background applications cannot sniff keystrokes or scrape screens belonging to other running applications).
+
+> - Runtime Kernel Hardening (sysctl)
+    The kernel parameters must be explicitly tuned via sysctl configurations to restrict common exploitation vectors. (Disable unprivileged ptrace scoping, restrict dmesg logs to root, lock unprivileged user namespaces, and harden the BPF JIT compiler against speculative execution side-channels).
+
+> - Pluggable Authentication Modules (PAM) Hardening
+    Configure account lockout systems (e.g., pam_faillock) to lock user authentication interfaces for a specific cooldown period after consecutive failed login attempts. (Prevents local brute-force attacks against the user password via open terminals or display managers).
+
+> - Proactive Package Lifecycle Management
+    The rolling release tree must be fully updated frequently to ensure rapid deployment of upstream security patches. Orphan packages and build dependencies must be aggressively audited and purged from the file system.
+
+
+================
+Layer 2: Network
+================
+
 
