@@ -68,7 +68,7 @@ Controls
 > - Bootloader Updates
     Bootloaders are software and must receive security updates.
 
-> - Bootloader Password
+> - Bootloader Integrity
     Restricts unauthorized modification of boot entries and boot parameters during startup. (Without it, kernel parameters can be appended at boot to bypass OS-level security controls entirely).
 
 > - Single Trusted Boot Path
