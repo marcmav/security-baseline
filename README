@@ -116,10 +116,10 @@ Controls
     Protect data at rest from unauthorized access. (Without it, physical access to the drive is sufficient to read all data regardless of OS-level permissions).
 
 > - Service Minimization
-    Disable or remove services that are not required. Every running service is an attack surface.
+    Disable or remove services that are not required. (Every running service is an attack surface).
 
 > - Application Minimization
-    Install only software that serves a defined purpose. Unnecessary software increases complexity and attack surface.
+    Install only software that serves a defined purpose. (Unnecessary software increases complexity and attack surface).
 
 > - Secure Software Sources
     Install software from trusted and verifiable sources. Avoid unofficial repositories and untrusted installation scripts.
