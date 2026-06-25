@@ -109,23 +109,20 @@ Controls
 > - Minimal Installation
     The operating system must be built from a minimal base (e.g., a vanilla terminal installation) avoiding pre-baked monolithic desktop environments and only what the system requires to function. (Every package is a potential vulnerability).
 
-> - System Updates
-    The operating system and installed software must be updated regularly. (Vulnerabilities lose much of their value once patched).
+> - Service Minimization
+    Disable or remove services that are not required. (Every running service is an attack surface).
 
 > - Full-Disk Encryption
     Protect data at rest from unauthorized access with a strong and unique password. (Without it, physical access to the drive is sufficient to read all data regardless of OS-level permissions).
 
-> - Service Minimization
-    Disable or remove services that are not required. (Every running service is an attack surface).
-
-> - Application Minimization
-    Install only software that serves a defined purpose. (Unnecessary software increases complexity and attack surface).
+> - System Updates
+    The operating system and installed software must be updated regularly. (Vulnerabilities lose much of their value once patched).
 
 > - Secure Software Sources
     Install software from trusted and verifiable sources. Avoid unofficial repositories and untrusted installation scripts.
 
-> - Authentication
-    Protect local accounts with strong passwords or passphrases and require authentication before granting access to the system.
+> - Application Minimization
+    Install only software that serves a defined purpose. (Unnecessary software increases complexity and attack surface).
 
 > - Least Privilege
     Daily activities should be performed as a standard user. Root privileges should only be used when required.
