@@ -119,7 +119,7 @@ Controls
     The operating system and installed software must be updated regularly. (Vulnerabilities lose much of their impact once patched).
 
 > - Secure Software Sources
-    Install software from trusted and verifiable sources. Avoid unofficial repositories and untrusted installation scripts.
+    Install software from trusted and verifiable sources. Prefer official repositories and cryptographically verified packages. (Avoid unofficial repositories and untrusted installation scripts).
 
 > - Application Minimization
     Install only software that serves a defined purpose. (Unnecessary software increases complexity and attack surface).
