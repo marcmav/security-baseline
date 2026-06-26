@@ -137,7 +137,7 @@ Controls
     Use key-based authentication only. Restrict access to known keys. Disable password authentication. Disable root login.
 
 > - Audit and Hardening Verification
-    Periodically run a system hardening audit to identify misconfigurations and gaps. (Lynis).
+    Periodically run a system hardening audit to identify misconfigurations and gaps.
 
 > - Backup Readiness
     The operating system must support reliable backup and recovery procedures without compromising data integrity.
