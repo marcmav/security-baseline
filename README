@@ -134,7 +134,7 @@ Controls
     Enforce process-level access controls beyond standard Unix permissions. (Limits the blast radius of a compromised process).
 
 > - SSH Hardening
-    Disable password authentication. Use key-based authentication only. Disable root login. Restrict access to known keys.
+    Use key-based authentication only. Restrict access to known keys. Disable password authentication. Disable root login.
 
 > - Audit and Hardening Verification
     Periodically run a system hardening audit to identify misconfigurations and gaps. (Lynis).
