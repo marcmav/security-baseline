@@ -179,7 +179,7 @@ Controls
     Restrict outbound connections to only what is necessary. Limits the impact of malware attempting to phone home or exfiltrate data.
 
 > - Trusted Resolver
-    Route DNS queries through a resolver with a verified no-log policy and support for DoT/DoH and DNSSEC.
+    Route DNS queries through a trusted resolver with a verified no-log policy and support for DoT/DoH and DNSSEC. Prefer providers with transparent privacy practices and independent security audits.
 
 > - DNS over TLS / DNS over HTTPS
     Encrypt DNS queries in transit. Unencrypted DNS exposes every domain you resolve to your ISP and any on-path observer. (Prevents local network observers or ISPs from eavesdropping on your browsing requests or altering DNS responses).
