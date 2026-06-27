@@ -182,10 +182,13 @@ Controls
     Route DNS queries through a resolver with a verified no-log policy and support for DoT/DoH and DNSSEC.
 
 > - DNS over TLS / DNS over HTTPS
-    Encrypt DNS queries in transit. Unencrypted DNS exposes every domain you resolve to your ISP and any on-path observer.
+    Encrypt DNS queries in transit. Unencrypted DNS exposes every domain you resolve to your ISP and any on-path observer. (Prevents local network observers or ISPs from eavesdropping on your browsing requests or altering DNS responses).
 
 > - DNSSEC Validation
     Validate DNS responses are cryptographically signed and have not been tampered with in transit. (Prevents DNS spoofing and cache poisoning).
+
+> - DNS Content Filtering
+    Upstream DNS infrastructure must utilize curated, aggressive blocklists to drop telemetry, tracking scripts, and known malware domains at the resolution phase before a connection can even be initiated.
 
 > - DNS Leak Prevention
     Ensure all DNS queries are routed through the configured resolver and not leaking to the ISP or a default system resolver. Verify periodically.
@@ -199,6 +202,10 @@ Controls
 > - Network Monitoring
     Periodically audit active connections and listening ports to identify unexpected outbound traffic or exposed services.
 
+----------------------------------------------------
+
+> - Mandatory Network Kill-Switch
+    The system transport routing must enforce a strict kill-switch rule. If the encrypted VPN tunnel drops, all clear-text outbound traffic must be instantly blocked by the firewall rather than leaking over the fallback interface.
 
 ================
 Layer 3: Gateway
