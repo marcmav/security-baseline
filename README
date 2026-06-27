@@ -206,7 +206,7 @@ Controls
     Periodically audit active connections and listening ports to identify unexpected outbound traffic or exposed services.
 
 > - Minimize Exposed Services
-    Disable or avoid exposing network services that are not explicitly required. Every listening service increases the remote attack surface.
+    Disable or avoid exposing network services that are not explicitly required. (Every listening service increases the remote attack surface).
 
 > - Secure Protocols
     Prefer protocols that provide authentication and encryption by default. Avoid deprecated or insecure protocols whenever modern alternatives exist.
