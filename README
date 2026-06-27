@@ -144,7 +144,7 @@ Controls
 Layer 2: Network
 ================
 
-The Network layer controls how the system communicates with other devices and external services. It establishes the trust boundary between the Compute layer and the Internet, controlling what traffic is permitted, where it is routed and how it is protected in transit. A compromised network can redirect, intercept or expose communications regardless of how secure the operating system is.
+The Network layer controls how the machine communicates with external systems. It is the boundary between the local environment and the outside world. A misconfigured or unmonitored network layer exposes every layer above it to remote threats regardless of how well they are hardened.
 
 note: Won't be talking about routers because its outside my scope.
 
