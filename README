@@ -160,7 +160,7 @@ Components
 Principle
 ---------
 
-Every network connection should be considered untrusted until proven otherwise. Communication must be explicitly permitted, minimally exposed and cryptographically protected whenever possible.
+Every connection the machine makes is a potential attack vector. Communication must be explicitly permitted, minimally exposed and cryptographically protected whenever possible.
 
 ---------
 Objective
