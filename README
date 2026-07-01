@@ -247,6 +247,12 @@ Controls
 > - Browser Hardening
     Apply strict configuration changes beyond default settings to reduce fingerprinting, disable telemetry and restrict passive data collection.
 
+> - HTTPS Enforcement
+    Enforce HTTPS-only mode. Refuse to load resources over unencrypted connections.
+
+> - Permission Minimization
+    Deny browser access to camera, microphone, location and notifications by default. Grant permissions only when explicitly required and revoke immediately after.
+
 > - Extension Minimization
     Install only extensions that serve a defined security or privacy purpose. (Every extension runs with elevated browser privileges and is a potential attack vector).
 
@@ -265,17 +271,8 @@ Controls
 > - Container Isolation
     Isolate browsing contexts into separate profiles to prevent cross-site cookie sharing and identity correlation.
 
-> - WebRTC Hardening
-    Disable or strictly confine WebRTC functionality within the browser parameters. (Prevents remote servers or scripts from discovering the machine's true local IP address behind a VPN tunnel).
-
 > - First-Party Isolation & Partitioning
     Enforce strict state partitioning and cookie isolation. Cookies, local storage and caches must be separated by the top-level domain. (Prevents tracking networks from profiling activities across different websites).
-
-> - HTTPS Enforcement
-    Enforce HTTPS-only mode. Refuse to load resources over unencrypted connections.
-
-> - Permission Minimization
-    Deny browser access to camera, microphone, location and notifications by default. Grant permissions only when explicitly required and revoke immediately after.
 
 > - Search Engine Selection
     Use an independent, non-profiling search engine that does not build a behavioral profile or correlate queries to an identity.
@@ -294,6 +291,11 @@ Profile Tiers
 --------------
 
 Browser activity is separated into distinct profiles according to trust level and purpose. Each tier operates under a different set of permissions, extensions and hardening settings. A session in a lower-trust tier must never share state, cookies or identity with a higher-trust tier.
+
+[ Tier 3: Disposable ]
+    [ Tier 2: Personal ]
+        [ Tier 1: Professional ]
+            [ Tier 0: Root ]
 
 > - Tier 0: Hardened / Paranoid
     Maximum restrictions. JavaScript disabled by default. No persistent cookies. No extensions beyond a content blocker. Used for anonymous research, unknown links and high-sensitivity browsing where identity must not be exposed under any circumstance.
