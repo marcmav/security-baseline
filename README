@@ -235,7 +235,7 @@ The browser is the largest attack surface on a modern machine. It executes arbit
 Objective
 ---------
 
-Deploy a hardened, open-source browser with a minimal extension set, isolate operational contexts using a strict tier system, and route all search queries through a private, non-profiling search engine.
+Deploy a hardened, open-source browser with a minimal extension set, strict context separation across profile tiers and route all search queries through a private, non-profiling search engine.
 
 --------
 Controls
@@ -251,7 +251,7 @@ Controls
     Install only extensions that serve a defined security or privacy purpose. (Every extension runs with elevated browser privileges and is a potential attack vector).
 
 > - Content Blocking
-    Block ads, trackers, frame injections and malicious scripts at the browser level by default as a second layer of defense after DNS filtering, enabling them only on explicit cases.
+    Block ads, trackers, frame injections and malicious scripts at the browser level by default as a second layer of defense after DNS filtering, enabling them only in explicit cases.
 
 > - JavaScript Exposure
     Restrict or disable JavaScript where practical. When full functionality is required, execute active content only from trusted websites.
@@ -265,17 +265,14 @@ Controls
 > - Container Isolation
     Isolate browsing contexts into separate profiles to prevent cross-site cookie sharing and identity correlation.
 
-> - Browser Profile Separation
-    Separate activities into distinct browser profiles according to their trust level or purpose (e.g., banking, work, personal and disposable). (This limits the impact of account compromise and cross-site tracking).
-
-> - HTTPS Enforcement
-    Enforce HTTPS-only mode. Refuse to load resources over unencrypted connections.
-
 > - WebRTC Hardening
     Disable or strictly confine WebRTC functionality within the browser parameters. (Prevents remote servers or scripts from discovering the machine's true local IP address behind a VPN tunnel).
 
 > - First-Party Isolation & Partitioning
-    Enforce strict state partitioning and cookie isolation. Cookies, local storage, and caches must be separated by the top-level domain. (Prevents tracking networks from profiling your activities across completely different websites).
+    Enforce strict state partitioning and cookie isolation. Cookies, local storage and caches must be separated by the top-level domain. (Prevents tracking networks from profiling activities across different websites).
+
+> - HTTPS Enforcement
+    Enforce HTTPS-only mode. Refuse to load resources over unencrypted connections.
 
 > - Permission Minimization
     Deny browser access to camera, microphone, location and notifications by default. Grant permissions only when explicitly required and revoke immediately after.
@@ -291,6 +288,27 @@ Controls
 
 > - Safe Browsing Habits
     Do not execute software or follow instructions from untrusted sources without independently verifying their authenticity.
+
+--------------
+Profile Tiers
+--------------
+
+Browser activity is separated into distinct profiles according to trust level and purpose. Each tier operates under a different set of permissions, extensions and hardening settings. A session in a lower-trust tier must never share state, cookies or identity with a higher-trust tier.
+
+> - Tier 0: Hardened / Paranoid
+    Maximum restrictions. JavaScript disabled by default. No persistent cookies. No extensions beyond a content blocker. Used for anonymous research, unknown links and high-sensitivity browsing where identity must not be exposed under any circumstance.
+
+> - Tier 1: Secure / Daily
+    Strict hardening applied. JavaScript enabled only on trusted sites. Full extension set active. No accounts signed in. Used for general daily browsing, search and reading where privacy is the priority.
+
+> - Tier 2: Functional / Trusted
+    Moderate hardening. JavaScript permitted. Signed-in accounts allowed for services that require authentication. Used for productivity, development tools and trusted web applications.
+
+> - Tier 3: Authenticated / Personal
+    Standard hardening. Used exclusively for sensitive authenticated sessions such as banking, government services and primary email. Never used for general browsing. Sessions are isolated and terminated after use.
+
+> - Tier 4: Disposable / Sandboxed
+    Temporary profile or isolated browser instance. No persistent state. Used for untrusted links, one-time access and anything that must leave no trace. Destroyed or reset after each session.
 
 
 ====================
