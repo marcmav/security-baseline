@@ -272,8 +272,6 @@ Controls
     Search queries must not be tied to an authenticated account or a persistent identity. Avoid signing into any account within the primary browsing context.
 
 
-> - Content Filtering (Hard Mode)
-
 > - WebRTC Hardening
     Disable or strictly confine WebRTC functionality within the browser parameters. (Prevents remote servers or scripts from discovering the machine's true local IP address behind a VPN tunnel).
 
